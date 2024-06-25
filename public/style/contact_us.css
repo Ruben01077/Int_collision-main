@@ -1,0 +1,138 @@
+.body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: italic;
+    
+    height: 100%;
+    margin-bottom: 50px;
+    /* font-family: "Inter", sans-serif;
+    font-style: italic; */
+ 
+
+ 
+}
+
+.map_div{
+
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+
+
+
+.contact_us_title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    color: black;
+    animation: text_animation 3s forwards;
+}
+
+@keyframes text_animation {
+    0%   {opacity: 0%;}
+    100% {opacity: 100%;}
+  }
+
+
+.map_and_info_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.business_hours{
+ text-align: center;
+ 
+}
+
+.contact_info_div ul{
+  display: flex;
+flex-direction: column;
+}
+
+
+
+.contact_info_div{
+  width: 100%;
+  max-width: 550px;
+  background-color: #ffffff;
+  height: 550px;
+  border-radius: 20px;
+  display: flex;
+flex-direction: column;
+
+
+  
+}
+
+.google_map{
+    width: 800px;
+    height: 550px;
+    margin: 10px;
+ 
+   
+}
+
+
+/* CONTACT FORM Start >>>>   */
+
+
+
+/* CONTACT FORM End >>>>   */
+
+
+
+@media (max-width: 900px) {
+
+
+
+  iframe{
+
+    height: 350px;
+    
+  
+}
+
+ .contact_us_title{
+
+  font-size: 2rem;
+
+ }
+
+ .contact_form{
+  width: 200px;
+ }
+
+ .google_map{
+
+
+  width: 350px;
+  
+}
+
+
+
+.contact_info_div{
+  padding: 20px;
+  margin-bottom: 250px;
+ 
+}
+
+.contact_info_div ul{
+
+  font-size: 20px;
+}
+
+
+  }

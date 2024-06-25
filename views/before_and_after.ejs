@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/before_and_after.css">
+    <title>International Auto Collision Center</title>
+</head>
+
+<%- include("partials/header") %>
+
+<div class="body">
+
+    <div class="title"><h1>BEFORE / AFTER</h1></div>
+
+    <div id="box3" class="all_box">
+    
+        <figure>
+            <div id="divisor3"></div>
+        </figure>
+        <input type="range" min="0" max="100" value="50" id="slider3" oninput="moveDivisor()">
+
+    </div>
+
+    <div id="box1" class="all_box">
+    
+        <figure>
+            <div id="divisor1"></div>
+        </figure>
+        <input type="range" min="0" max="100" value="50" id="slider1" oninput="moveDivisor()">
+
+    </div>
+
+    <div id="box2" class="all_box">
+    
+        <figure>
+            <div id="divisor2"></div>
+        </figure>
+        <input type="range" min="0" max="100" value="50" id="slider2" oninput="moveDivisor()">
+
+    </div>
+
+    <div id="box4" class="all_box">
+    
+        <figure>
+            <div id="divisor4"></div>
+        </figure>
+        <input type="range" min="0" max="100" value="50" id="slider4" oninput="moveDivisor()">
+
+    </div>
+
+   
+
+</div>
+
+<script>
+
+    var divisor1 = document.getElementById("divisor1"),
+        slider1 = document.getElementById("slider1");
+    var divisor2 = document.getElementById("divisor2"),
+        slider2 = document.getElementById("slider2");
+    var divisor3 = document.getElementById("divisor3"),
+        slider3 = document.getElementById("slider3");
+    var divisor4 = document.getElementById("divisor4"),
+        slider4 = document.getElementById("slider4");
+
+
+    function moveDivisor() {
+        divisor1.style.width = slider1.value + "%";
+        divisor2.style.width = slider2.value + "%";
+        divisor3.style.width = slider3.value + "%";
+        divisor4.style.width = slider4.value + "%";
+      
+    }
+    
+    
+</script>
+<%- include("partials/footer") %>
+
+</html>
